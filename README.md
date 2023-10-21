@@ -43,7 +43,6 @@ This repository contains implementations of various operating system concepts an
 12. **Disk Scheduling Algorithms:**
     - Implementation of SSTF, SCAN, and C-Look disk scheduling algorithms considering the initial head position moving away from the spindle.
 
-
 ## Contributing:
 
 If you find any issues or have improvements to suggest, please open an issue or create a pull request. Contributions are welcome!
