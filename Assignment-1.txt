@@ -564,7 +564,7 @@ pranav@LAPTOP-TB69H925:~$
 
 pranav@LAPTOP-TB69H925:~/OS$ cat addbook.txt
 anish   	t21055  pune    	1234567890
-pranav  t21032  jarud   	9021206946
+pranav  t21032  jarud   	1234123412
 deep    	t21029  jalgaon 	78425945846
 mohak  t21001  nashik  	96259348659
 aditya  	t21036  aura    	2356478236
@@ -572,7 +572,7 @@ aditya  	t21036  aura    	2356478236
 This command will search and replace the pattern in file
 pranav@LAPTOP-TB69H925:~/OS$ sed 's/jarud/pune/' addbook.txt
 anish     t21055  pune    	1234567890
-pranav  	t21032  jarud  	9021206946
+pranav  	t21032  jarud  	1234123412
 deep    	t21029  jalgaon 78425945846
 mohak  t21001  nashik  	96259348659
 aditya  	t21036  aura    	2356478236
@@ -581,7 +581,7 @@ This command will search and replace the pattern in file permanently
 pranav@LAPTOP-TB69H925:~/OS$ sed -i 's/jarud/pune/' addbook.txt
 pranav@LAPTOP-TB69H925:~/OS$ cat addbook.txt
 anish   	t21055  pune    1234567890
-pranav  t21032  pune    	9021206946
+pranav  t21032  pune    	1234123412
 deep    	t21029  jalgaon 78425945846
 mohak   t21001  nashik  96259348659
 aditya 	 t21036  aura    	2356478236
@@ -589,7 +589,7 @@ aditya 	 t21036  aura    	2356478236
 This command will search and replace the pattern in file permanently in second line
 pranav@LAPTOP-TB69H925:~/OS$ sed '2 s/pune/jarud/' addbook.txt
 anish   	t21055  pune    1234567890
-pranav  t21032  jarud   	9021206946
+pranav  t21032  jarud   	1234123412
 deep    	t21029  jalgaon 78425945846
 mohak   t21001  nashik  96259348659
 aditya  	t21036  aura    	2356478236
@@ -599,7 +599,7 @@ aditya  	t21036  aura    	2356478236
 This command will search and replace the pattern in file for first occurrence
 pranav@LAPTOP-TB69H925:~/OS$ sed 's/pune/aund/1' addbook.txt
 anish   	t21055  pune    	1234567890
-pranav  t21032  aund    	9021206946
+pranav  t21032  aund    	1234123412
 deep    	t21029  jalgaon 78425945846
 mohak   t21001  nashik  96259348659
 aditya  	t21036  aura    	2356478236
@@ -608,7 +608,7 @@ aditya  	t21036  aura    	2356478236
 
 This command will delete first line in file
 pranav@LAPTOP-TB69H925:~/OS$ sed '1d' addbook.txt
-pranav  t21032  pune    9021206946
+pranav  t21032  pune    1234123412
 deep    t21029  jalgaon 78425945846
 mohak   t21001  nashik  96259348659
 aditya  t21036  aura    2356478236
@@ -617,19 +617,19 @@ This command will delete line in range 3,4 in file
 pranav@LAPTOP-TB69H925:~/OS$ sed -i '3,4d' addbook.txt
 pranav@LAPTOP-TB69H925:~/OS$ cat addbook.txt
 anish   t21055  pune    1234567890
-pranav  t21032  pune    9021206946
+pranav  t21032  pune    1234123412
 aditya  t21036  aura    2356478236
 
 This command will delete last line in file
 pranav@LAPTOP-TB69H925:~/OS$ sed -i '$d' addbook.txt
 pranav@LAPTOP-TB69H925:~/OS$ cat addbook.txt
 anish   t21055  pune    1234567890
-pranav  t21032  pune    9021206946
+pranav  t21032  pune    1234123412
 
 This command will delete search pattern line in file
 pranav@LAPTOP-TB69H925:~/OS$ sed -i '/anish/d' addbook.txt
 pranav@LAPTOP-TB69H925:~/OS$ cat addbook.txt
-pranav  t21032  pune    9021206946
+pranav  t21032  pune    1234123412
 
 
 
