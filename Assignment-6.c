@@ -17,7 +17,7 @@ void* producer(void* arg)
     printf("\nEnter the Value ");
     scanf("%d", &data);
     buffer[in] = data;
-    printf("Producer Thread id = %ld and Producer Item = %d", pthread_self(), data);sem_post(&s);     sem_post(&f);      sleep(2);
+    printf("Producer Thread id = %ld and Producer Item = %d", pthread_self(), data);
     in = (in + 1) % 5;
     sem_post(&s);
     sem_post(&f); 
